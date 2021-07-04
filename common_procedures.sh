@@ -1,5 +1,6 @@
 #!/bin/bash -e
 #TODO: integrate this tool with fuzzy finders
+#TODO: Add alias to make adding a new procedure easy
 PTH_TXT_FLS=~/common_procedures/text_files
 #TODO: programatically expand this based on the number of .txt files (use array and for loop)
 ARG1=git_commands
