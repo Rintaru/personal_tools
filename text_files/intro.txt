@@ -1,0 +1,6 @@
+common_procedures    list common procedures(can tab complete) (TODO: Integrate script with fzf!!!) 
+
+edbash               edit ~/.bashrc 
+edcomm               edit ~/common_procedures.sh 
+
+MAKE SURE TO SET JOHN REPELANT!!!
