@@ -1,3 +1,2 @@
 git log --graph									show git log as a tree
-git branch -d <BranchName> && git push origin --delete <BranchName>             delete branch localy and remotely
-
+git branch -D <BranchName> && git push origin --delete <BranchName>             delete branch localy and remotely(IF DELETING DEFAULT BRANCH: settings >> branches >> Default Branch)
