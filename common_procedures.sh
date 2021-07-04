@@ -1,6 +1,7 @@
 #!/bin/bash -e
 #TODO: integrate this tool with fuzzy finders
 PTH_TXT_FLS=~/common_procedures/text_files
+#TODO: programatically expand this based on the number of .txt files (use array and for loop)
 ARG1=git_commands
 ARG2=networking
 ARG3=ros
