@@ -1,15 +1,17 @@
-Shift+Ctrl+O         split horizontally 
-Shift+Ctrl+E         split vertically 
-Shift+Ctrl+X         maximize/unmaximize terminal 
+Shift+Ctrl+O                                split horizontally 
+Shift+Ctrl+E                                split vertically 
+Shift+Ctrl+X                                maximize/unmaximize terminal 
 
-Alt+A                broadcast keypresses 
-Alt+O                stop broadcasting keypresses 
+Alt+A                                       broadcast keypresses 
+Alt+O                                       stop broadcasting keypresses 
 
-Ctrl+PgUp/PgDown     switch tabs 
-Alt+arrow            switch split windows 
+Ctrl+PgUp/PgDown                            switch tabs 
+Alt+arrow                                   switch split windows 
 
-edbash               edit ~/.bashrc 
-edcomm               edit ~/common_procedures.sh 
-john_repelant 30     set blank screen time to 30 sec 
+edbash                                      edit ~/.bashrc 
+edcomm                                      edit ~/common_procedures.sh 
+john_repelant 30                            set blank screen time to 30 sec 
 
-sleepy_tyme          sleepy_tyme
+sleepy_tyme                                 sleepy_tyme
+
+cp --backup <file> <destination>            backup a file to a destination  
