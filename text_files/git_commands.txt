@@ -1,1 +1,3 @@
-git log --graph		show git log as a tree
+git log --graph									show git log as a tree
+git branch -d <BranchName> && git push origin --delete <BranchName>             delete branch localy and remotely
+
