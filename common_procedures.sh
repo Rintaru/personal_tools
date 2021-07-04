@@ -15,13 +15,26 @@ cat $PTH_TXT_FLS/intro
 echo " "
 
 #TODO: programatically expand the possible arguments based on the number of .txt files
+#TODO: use 'complete -F display_args' to dynamically show possible arguments based on previous arguments
 #set tab complete arguments
-complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5" common_procedures
+complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 -edit -add" common_procedures
 
 #function for command to show reminders for common procedures
 common_procedures() {
-    echo " "
-    cat $PTH_TXT_FLS/$1
-    echo " "
+    case [$2] in
+#TODO: Make -edit and -add functions work
+        -edit)
+          #nano $PTH_TXT_FLS/$1 
+        ;;
+        -add)
+          #touch $PTH_TXT_FLS/$1
+        ;;
+        *)
+          echo " "
+          cat $PTH_TXT_FLS/$1
+          echo " "        
+        ;;
+    esac
+
 }
- #display_available_procedures
+ #display_args
