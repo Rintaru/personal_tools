@@ -1,3 +1,5 @@
+sudo apt update && rosdep install --from-paths src --ignore-src -r -y			Install deps(RUN FROM WS TOP DIR)
+
 ------------------------------------
 ******ADDING CUSTOM MESSAGES********
 ------------------------------------

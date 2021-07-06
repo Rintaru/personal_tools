@@ -1,3 +1,5 @@
+rsync -a <path/local_file> <user>@<ip>:<path/remote_parent_dir>			cp contents of <file> to remote directory(OVERWRITES WITHOUT WARNING)
+
 ------------------------------------
 TO BE ADDED IN THE FUTURE*****************
 ------------------------------------

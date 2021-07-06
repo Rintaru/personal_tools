@@ -9,3 +9,5 @@ git branch -a									list all local and remote branches
 git reset HEAD <file>								unstage a file
 
 <repo_URL>/<file>/#L<line_number>						get url that points to specific line of a file
+
+git config --get remote.origin.url						show remote url
