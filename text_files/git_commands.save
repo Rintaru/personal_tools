@@ -10,6 +10,6 @@ git reset HEAD <file>								unstage a file
 
 <repo_URL>/<file>/#L<line_number>						get url that points to specific line of a file
 
-git remote -v									show remote url
+git config --get remote.origin.url						show remote url
 
-git pull <remote> <branch> --allow-unrelated-histories				Use after adding existing local to existing repo
+git pull  master --allow-unrelated-histories

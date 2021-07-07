@@ -1,5 +1,5 @@
 rsync -a <path/local_file> <user>@<ip>:<path/remote_parent_dir>			cp contents of <file> to remote directory(OVERWRITES WITHOUT WARNING)
-
+sudo hostnamectl set-hostname <name> 						set host name of the computer
 ------------------------------------
 TO BE ADDED IN THE FUTURE*****************
 ------------------------------------

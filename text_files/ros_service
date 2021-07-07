@@ -1,0 +1,4 @@
+sudo systemctl restart ros.service										restart ros service
+sudo journalctl -f -u ros.service										monitor ros service log 
+sudo systemctl stop ros.service && rosrun robot_upstart uninstall ros						uninstall ros service
+source <opt/..../setup.bash> && source <ws/devel/setup.bash> && python <path_to_upstart>/upstart.py		install ros service
