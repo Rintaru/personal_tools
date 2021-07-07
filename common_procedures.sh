@@ -8,7 +8,7 @@ ARG2=networking
 ARG3=ros
 ARG4=terminator
 ARG5=vscode
-
+ARG6=ros_service
 
 echo " "
 cat $PTH_TXT_FLS/intro
@@ -17,17 +17,17 @@ echo " "
 #TODO: programatically expand the possible arguments based on the number of .txt files
 #TODO: use 'complete -F display_args' to dynamically show possible arguments based on previous arguments
 #set tab complete arguments
-complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 -edit -add" common_procedures
+complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 $ARG6 -create -add" common_procedures
 
 #function for command to show reminders for common procedures
 common_procedures() {
     case [$2] in
-#TODO: Make -edit and -add functions work
-        -edit)
-          #nano $PTH_TXT_FLS/$1 
+#TODO: Make -create and -add functions work
+        -create)
+          #touch $PTH_TXT_FLS/$1
         ;;
         -add)
-          #touch $PTH_TXT_FLS/$1
+          #echo $3 >> $PTH_TXT_FLS/$1
         ;;
         *)
           echo " "
