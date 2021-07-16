@@ -12,4 +12,17 @@ git reset HEAD <file>								unstage a file
 
 git remote -v									show remote url
 
+git remote <remove/add> <origin_name>						remove/add remote repo						
+
 git pull <remote> <branch> --allow-unrelated-histories				Use after adding existing local to existing repo
+
+git config --global user <email/name>						edit email/name
+
+
+------------------------------------
+*****GIT SUBMODULES*****************
+------------------------------------
+
+git submodule add -b <branch> <repo_url> <optional_path>			add a submudule to git repo
+
+git clone <repo_url> && cd <repo> && git submodule update --init --recursive	Clone a repo with submodules
