@@ -17,17 +17,20 @@ echo " "
 #TODO: programatically expand the possible arguments based on the number of .txt files
 #TODO: use 'complete -F display_args' to dynamically show possible arguments based on previous arguments
 #set tab complete arguments
-complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 $ARG6 -create -add" common_procedures
+complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 $ARG6 --create --add" common_procedures
 
 #function for command to show reminders for common procedures
 common_procedures() {
-    case [$2] in
+    case $2 in
 #TODO: Make -create and -add functions work
-        -create)
-          #touch $PTH_TXT_FLS/$1
+        --create)
+          touch $PTH_TXT_FLS/$1
         ;;
-        -add)
-          #echo $3 >> $PTH_TXT_FLS/$1
+        --add)
+          echo "$3" >> $PTH_TXT_FLS/$1
+          echo " "
+          cat $PTH_TXT_FLS/$1
+          echo " "   
         ;;
         *)
           echo " "
@@ -36,5 +39,7 @@ common_procedures() {
         ;;
     esac
 
+
+
 }
- #display_args
+ #display_args()
