@@ -2,6 +2,7 @@
 #TODO: integrate this tool with fuzzy finders
 #TODO: Add function to make adding a new procedure easy
 PTH_TXT_FLS=~/__common_procedures/text_files
+PTH_SCRIPTS=~/__common_procedures/scripts
 #TODO: programatically expand this based on the number of .txt files (use array and for loop)
 ARG1=git_commands
 ARG2=networking
@@ -43,9 +44,5 @@ common_procedures() {
 }
 
 _common_procedures() {
-  args=""
-  for cur in $PTH_TXT_FLS/*; do
-    args="${args/[$'\n ']} $(basename $cur)"
-  done
-  COMPREPLY="${args}"
+  python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@> /tmp/common_procedures.txt
 }
