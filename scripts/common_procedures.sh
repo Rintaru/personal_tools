@@ -11,6 +11,13 @@ ARG4=terminator
 ARG5=vscode
 ARG6=ros_service
 
+
+#Create tmp file for autocomplete function
+tmpfile=$(mktemp /tmp/common_procedures.XXXXXXX)
+#exec 3>"$tmpfile"
+#exec 4<"$tmpfile"
+
+
 echo " "
 cat $PTH_TXT_FLS/intro
 echo " "
@@ -18,7 +25,7 @@ echo " "
 #TODO: use 'complete -F _common_procedures' to dynamically show possible arguments based on previous arguments
 #set tab complete arguments
 #complete -W "$ARG1 $ARG2 $ARG3 $ARG4 $ARG5 $ARG6 --create --add" common_procedures
-complete -F _common_procedures -o filenames common_procedures
+complete -F _common_procedures common_procedures
 
 #function for command to show reminders for common procedures
 common_procedures() {
@@ -44,5 +51,8 @@ common_procedures() {
 }
 
 _common_procedures() {
-  python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@> /tmp/common_procedures.txt
+
+  array=$(python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@)
+  
+  COMPREPLY=( $( compgen -W "${array}" ) )
 }
