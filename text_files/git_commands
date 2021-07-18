@@ -1,28 +1,39 @@
-git log --graph									show git log as a tree
+------------------------------------
+*****BRANCH*************************
+------------------------------------
+git branch -D <BranchName> && git push origin --delete <BranchName>						delete branch localy and remotely(IF DELETING DEFAULT BRANCH: settings >> branches >> Default Branch)
 
-git branch -D <BranchName> && git push origin --delete <BranchName>             delete branch localy and remotely(IF DELETING DEFAULT BRANCH: settings >> branches >> Default Branch)
+git fetch origin && git diff <branch> remotes/<remote_name>/<branch>						diff between local and remote branch
 
-git fetch origin && git diff <branch> remotes/<remote_name>/<branch>            diff between local and remote branch
+git branch -a													list all local and remote branches
 
-git branch -a									list all local and remote branches
+------------------------------------
+*****COMMITS************************
+------------------------------------
+git reset HEAD <file>												unstage a file
 
-git reset HEAD <file>								unstage a file
+------------------------------------
+*****REMOTES*****************
+-----------------------------------
+<repo_URL>/<file>/#L<line_number>										get url that points to specific line of a file
 
-<repo_URL>/<file>/#L<line_number>						get url that points to specific line of a file
+git remote -v													show remote url
 
-git remote -v									show remote url
+git remote <remove/add> <origin_name>										remove/add remote repo						
 
-git remote <remove/add> <origin_name>						remove/add remote repo						
+git pull <remote> <branch> --allow-unrelated-histories								Use after adding existing local to existing repo
 
-git pull <remote> <branch> --allow-unrelated-histories				Use after adding existing local to existing repo
+git config --global user <email/name>										edit email/name
 
-git config --global user <email/name>						edit email/name
+git log --graph                                                                                                 show git log as a tree
 
 
 ------------------------------------
-*****GIT SUBMODULES*****************
+*****SUBMODULES*********************
 ------------------------------------
 
-git submodule add -b <branch> <repo_url> <optional_path>			add a submudule to git repo
+git submodule add -b <branch> <repo_url> <optional_path>							add a submudule to git repo
 
-git clone <repo_url> && cd <repo> && git submodule update --init --recursive	Clone a repo with submodules
+git clone <repo_url> && cd <repo> && git submodule update --init --recursive					Clone a repo with submodules
+
+( find . -type d -name ".git" && find . -name ".gitignore" && find . -name ".gitmodules" ) | xargs rm -rf       Recursively remove .git folders from directories and sub directories
