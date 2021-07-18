@@ -13,7 +13,7 @@ ARG6=ros_service
 
 
 #Create tmp file for autocomplete function
-tmpfile=$(mktemp /tmp/common_procedures.XXXXXXX)
+#tmpfile=$(mktemp /tmp/common_procedures.XXXXXXX)
 #exec 3>"$tmpfile"
 #exec 4<"$tmpfile"
 
@@ -52,7 +52,7 @@ common_procedures() {
 
 _common_procedures() {
 
-  array=$(python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@)
+  # args=$(python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@)
   
-  COMPREPLY=( $( compgen -W "${array}" ) )
+  COMPREPLY=$(python $PTH_SCRIPTS/auto_complete.py $1)
 }

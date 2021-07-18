@@ -1,3 +1,11 @@
-import sys
+import sys , getopt
 from os import listdir
-print(' git_commands networking ros terminator vscode ros_service')
+try:
+    args= getopt.getopt(sys.argv,"a")
+    if args[1][1].startswith("o"):
+        print(args[1][1])
+    else:
+        print("lol")
+except getopt.GetoptError:
+    print('critical failure')
+    pass
