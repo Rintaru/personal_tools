@@ -54,5 +54,5 @@ _common_procedures() {
 
   # args=$(python $PTH_SCRIPTS/auto_complete.py -a $PTH_TXT_FLS -b $@)
   
-  COMPREPLY=$(python $PTH_SCRIPTS/auto_complete.py $1)
+  COMPREPLY=$(python $PTH_SCRIPTS/auto_complete.py $@)
 }
