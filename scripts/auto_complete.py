@@ -1,6 +1,10 @@
 from posix import ST_WRITE
 import sys , getopt
 from os import listdir
+
+#OBSOLETE SCRIPT
+
+
 try:
     args= getopt.getopt(sys.argv,"a")
     ##Test

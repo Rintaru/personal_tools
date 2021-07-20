@@ -1,6 +1,5 @@
 #!/bin/bash
 #TODO: integrate this tool with fuzzy finders
-#TODO: Add function to make adding a new procedure easy
 PTH_TXT_FLS=$HOME/__common_procedures/text_files
 PTH_SCRIPTS=$HOME/__common_procedures/scripts
 

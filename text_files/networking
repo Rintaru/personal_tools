@@ -1,4 +1,4 @@
-rsync -a <path/local_file> <user>@<ip>:<path/remote_parent_dir>						cp contents of <file> to remote directory(OVERWRITES WITHOUT WARNING)
+rsync -a <path/local_dir> <user>@<ip>:<path/remote_parent_dir>						cp contents of <local_dir> to remote directory(OVERWRITES WITHOUT WARNING)
 rsync -lptgoD ~/<path/local_file> <user>@<ip>:~/<path/remote_parent_dir>				cp single file to remote directory(OVERWRITES WITHOUT WARNING)	
 
 sudo hostnamectl set-hostname <name>									set host name of the computer
