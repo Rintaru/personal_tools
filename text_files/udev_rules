@@ -1,13 +1,13 @@
-udevsymlink                             Create symlink to device alias.
+udevsymlink						Create symlink to device alias.
 
 
 ------------------------------------
 ******STEPS TO SETUP USB FTDI*******
 ------------------------------------
 
-udevadm monitor                         Monitor devices that are plugged/unplugged.
-udevadm info -a /dev/<device_name>                      Get info for writing udev rules. <device_name> comes from `udevadm monitor`
-touch /etc/udev/rules.d/<prioroty>-<name>.rules         create udev rule from `udevadm info`
+udevadm monitor						Monitor devices that are plugged/unplugged.
+udevadm info -a /dev/<device_name>			Get info for writing udev rules. <device_name> comes from `udevadm monitor`
+touch /etc/udev/rules.d/<prioroty>-<name>.rules		create udev rule from `udevadm info`
 
 ------------------------------------
 *********UDEV RULE TEMPLATE*********

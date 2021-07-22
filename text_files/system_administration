@@ -1,1 +1,6 @@
-hostnamectl     show hostname, and other cpu info
+hostnamectl					show hostname, and other cpu info
+sudo adduser <user_name>			create new user
+sudo addgroup <user_name>			create new group
+groups						list group
+kill -9 <PID>					kill process with a PID
+sudo du -hs <path> | sort -h			list file sizes and sort by size 
