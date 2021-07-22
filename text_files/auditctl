@@ -1,0 +1,2 @@
+audit -w <path>		add watch to path
+aureport		show log files in human readable form 
