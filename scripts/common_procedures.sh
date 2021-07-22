@@ -17,6 +17,7 @@ common_procedures() {
     case $2 in
         --create)
           touch $PTH_TXT_FLS/$1
+          nano $PTH_TXT_FLS/$1
         ;;
         --edit)
           #TODO: make --edit take in two args, command and an explanation
