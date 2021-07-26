@@ -44,5 +44,5 @@ _common_procedures() {
     printf "%s\n" "$2"*
     # cd $PTH_OPTIONS
     # printf "%s\n" "$3"*
-
+    #TODO: https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion.html
 }
