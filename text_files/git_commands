@@ -21,7 +21,7 @@ git remote -v													show remote url
 
 git remote <remove/add> <origin_name>										remove/add remote repo						
 
-git pull <remote> <branch> --allow-unrelated-histories								Use after adding existing local to existing repo
+git pull <remote> <branch> --allow-unrelated-histories								use after adding existing local to existing repo
 
 git config --global user <email/name>										edit email/name
 
@@ -34,6 +34,18 @@ git log --graph                                                                 
 
 git submodule add -b <branch> <repo_url> <optional_path>							add a submudule to git repo
 
-git clone <repo_url> && cd <repo> && git submodule update --init --recursive					Clone a repo with submodules
+git clone <repo_url> && cd <repo> && git submodule update --init --recursive					clone a repo with submodules
 
-( find . -type d -name ".git" && find . -name ".gitignore" && find . -name ".gitmodules" ) | xargs rm -rf       Recursively remove .git folders from directories and sub directories
+( find . -type d -name ".git" && find . -name ".gitignore" && find . -name ".gitmodules" ) | xargs rm -rf       recursively remove .git folders from directories and sub directories
+
+
+------------------------------------
+*****ADDING SSH-KEYS****************
+------------------------------------
+ssh-keygen -t ed25519 -C "shintaruruiz@gmail.com"								create key linked to email used in github account
+
+cat .ssh/<key_name>.pub && (copy contents of <keyname>.pub)							copy public key to clipboard
+
+setting->SSH and GPG keys->New SSH key->(paste from clipboard)							paste public key on github.
+
+(click `Add SSH key`)												add ssh key to github

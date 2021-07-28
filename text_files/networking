@@ -3,7 +3,7 @@ rsync -lptgoD ~/<path/local_file> <user>@<ip>:~/<path/remote_parent_dir>				cp s
 
 route -n												show routing table
 
-sudo wireshark												tool used to determine ip addresses of devices on a network
+sudo wireshark												determine ip addresses of devices on a network if they are "broadcasting"
 
 ------------------------------------
 **************nmcli*****************
