@@ -15,11 +15,11 @@ complete -o nospace -C _common_procedures common_procedures
 #function for command to show reminders for common procedures
 common_procedures() {
     case $2 in
-        --create)
+        -c)
           touch $PTH_TXT_FLS/$1
           nano $PTH_TXT_FLS/$1
         ;;
-        --edit)
+        -e)
           #TODO: make --edit take in two args, command and an explanation
           #echo "$3" >> $PTH_TXT_FLS/$1
           nano $PTH_TXT_FLS/$1
