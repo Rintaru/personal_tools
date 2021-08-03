@@ -1,5 +1,6 @@
 cd ~/<ws> && sudo apt update && rosdep install --from-paths src --ignore-src -r -y			Install deps
 
+catkin_make --only-pkg-with-deps <package> && catkin_make -DCATKIN_WHITELIST_PACKAGES=""		catkin_make single package then re-enable catkin_make for all packages
 ------------------------------------
 ******ADDING CUSTOM MESSAGES********
 ------------------------------------
