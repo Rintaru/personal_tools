@@ -1,6 +1,11 @@
 cd ~/<ws> && sudo apt update && rosdep install --from-paths src --ignore-src -r -y			Install deps
 
 catkin_make --only-pkg-with-deps <package> && catkin_make -DCATKIN_WHITELIST_PACKAGES=""		catkin_make single package then re-enable catkin_make for all packages
+
+cd ~/<ws> && catkin list										list packages in a workspace
+
+catkin config --no-blacklist										clear blacklist
+catkin config --blacklist <pkg>										blacklist pkg
 ------------------------------------
 ******ADDING CUSTOM MESSAGES********
 ------------------------------------
@@ -9,8 +14,8 @@ catkin_make --only-pkg-with-deps <package> && catkin_make -DCATKIN_WHITELIST_PAC
 ------------------------------------
 ******ROSTEST CMD LINE**************
 ------------------------------------
-catkin_make run_test											run test (tab complete to test specific pkg)
-cd ~/<ws_dir>/build/test_results									test logs for each pkg stored here
+catkin test											run test (tab complete to test specific pkg)
+cd ~/<ws_dir>/build/<pkg>/test_results								test logs for each pkg stored here
 ------------------------------------
 ******ROSTEST CMAKE*****************  
 ------------------------------------

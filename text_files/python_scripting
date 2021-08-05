@@ -1,3 +1,15 @@
 ------------------------------------
 *****TOUPLES************************
 ------------------------------------
+
+------------------------------------
+*****UNITTEST***********************
+------------------------------------
+#!/usr/bin/python
+import unittest
+
+
+class ClassNameTester(unittest.TestCase):
+    def test_init(self):
+        self.assertTrue( )
+
