@@ -11,7 +11,7 @@ git branch -a													list all local and remote branches
 *****COMMITS************************
 ------------------------------------
 git reset HEAD <file>												unstage a file
-
+git reset -- <file>												undo unstaged files in local
 ------------------------------------
 *****REMOTES*****************
 -----------------------------------
