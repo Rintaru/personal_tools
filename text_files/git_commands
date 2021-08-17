@@ -12,6 +12,13 @@ git branch -a													list all local and remote branches
 ------------------------------------
 git reset HEAD <file>												unstage a file
 git reset -- <file>												undo unstaged files in local
+
+------------------------------------
+*****COMMITS************************
+------------------------------------
+git rebase base topic												apply new commits from base on to topic
+
+git checkout base && git merge topic										merge topic in to base
 ------------------------------------
 *****REMOTES*****************
 -----------------------------------

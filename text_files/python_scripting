@@ -13,3 +13,14 @@ class ClassNameTester(unittest.TestCase):
     def test_init(self):
         self.assertTrue( )
 
+------------------------------------
+*****TRY-EXCEPT*********************
+------------------------------------
+try:
+  pass
+except <errorname>:
+  pass
+except <errornam2>:
+  pass
+except:
+  pass
