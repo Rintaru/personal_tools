@@ -14,11 +14,13 @@ git reset HEAD <file>												unstage a file
 git reset -- <file>												undo unstaged files in local
 
 ------------------------------------
-*****COMMITS************************
+*****MERGING************************
 ------------------------------------
 git rebase base topic												apply new commits from base on to topic
 
 git checkout base && git merge topic										merge topic in to base
+
+git push -force origin <branch>											git push without having to pull first
 ------------------------------------
 *****REMOTES*****************
 -----------------------------------

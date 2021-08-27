@@ -1,0 +1,3 @@
+:q			quit vim
+:q!			quit vim without exiting
+
