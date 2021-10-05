@@ -15,6 +15,6 @@ john_repelant 30                            set blank screen time to 30 sec
 sleepy_tyme                                 sleepy_tyme
 
 Ctrl+W					    Delete left word
-
+Ctrl+Y					    Reintroduce word deleted with Ctrl+W
 cp --backup <file> <destination>            backup a file to a destination  
 
