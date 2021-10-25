@@ -7,5 +7,8 @@ sudo apt update
 sudo apt install -y ros-melodic-ros-base
 source /opt/ros/melodic/setup.bash
 sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 sudo rosdep init
 rosdep update
+

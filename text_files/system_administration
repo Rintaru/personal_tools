@@ -6,8 +6,8 @@ sudo addgroup <group_name>                      create new group
 groups <user>                                   determine groups that <user> is a part of
 groups						list group
 sudo usermod -a -G <group_name> <user_name>     add user to group
-chown -R <user>:<group> <folder_1> <folder_2>  recursively change folder's user and group
-
+chown -R <user>:<group> <folder_1> <folder_2>	recursively change folder's user and group
+sudo passwd					change password
 
 kill -9 <PID>					kill process with a PID
 pgrep rosmaster					grab PID of rosmaster
