@@ -11,10 +11,16 @@ git branch -a													list all local and remote branches
 *****COMMITS************************
 ------------------------------------
 git reset HEAD <file>												unstage a file
+
 git reset -- <file>												undo unstaged file in local
+
 git reset <commit>												return all changes made after <commit> to unstage change
+
 git checkout .													undo all unstaged changes  
+
 git add -p <file> <file2>											Selectively add specific lines in a file rather than the whole file
+
+git rebase -i HEAD~<n>												edit previous commits
 ------------------------------------
 *****MERGING************************
 ------------------------------------
