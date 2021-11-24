@@ -13,3 +13,5 @@ kill -9 <PID>					kill process with a PID
 pgrep rosmaster					grab PID of rosmaster
 
 sudo du -hs <path> | sort -h			list file sizes and sort by size 
+
+sudo nano /etc/modprobe.d/blacklist.conf	edit blacklisted kernel modules

@@ -20,7 +20,7 @@ git checkout .													undo all unstaged changes
 
 git add -p <file> <file2>											Selectively add specific lines in a file rather than the whole file
 
-git rebase -i HEAD~<n>												edit previous commits
+git rebase -i HEAD~n												edit previous n commits
 ------------------------------------
 *****MERGING************************
 ------------------------------------
