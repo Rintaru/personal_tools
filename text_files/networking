@@ -5,6 +5,7 @@ route -n												show routing table
 
 sudo wireshark												determine ip addresses of devices on a network if they are "broadcasting"
 
+netcat -l <destination> <port>										listen for TCP messages heading to <destination> via <port>
 ------------------------------------
 **************nmcli*****************
 ------------------------------------
