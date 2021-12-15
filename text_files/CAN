@@ -1,0 +1,1 @@
+sudo ip link set can0 up type can bitrate 500000 && sudo ifconfig can0 up			Enable CANOpen interface and set bitrate to 500000 bit/s

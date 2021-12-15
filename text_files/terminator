@@ -18,3 +18,4 @@ Ctrl+W					    Delete left word
 Ctrl+Y					    Reintroduce word deleted with Ctrl+W
 cp --backup <file> <destination>            backup a file to a destination  
 
+cal -n					    show a calendar with the current month and the previous n months

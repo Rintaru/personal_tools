@@ -1,0 +1,4 @@
+------------------------------------
+*****COMPILE_PROGRAMS***************
+------------------------------------
+cc <executable_source>.cpp -o <executable_name>				compile <executable_source> into <executable_name> 
