@@ -3,6 +3,8 @@ rsync -lptgoD ~/<path/local_file> <user>@<ip>:~/<path/remote_parent_dir>				cp s
 
 route -n												show routing table
 
+sudo route del -net <ip address> gw <gateway address>							delete ip address from routing table
+
 sudo wireshark												determine ip addresses of devices on a network if they are "broadcasting"
 
 netcat -l <destination> <port>										listen for TCP messages heading to <destination> via <port>
@@ -21,6 +23,13 @@ sudo nmcli device wifi list										list wifi devices
 sudo nmcli d wifi connect <SSID> password <PASSWORD>							connect to a wifi
 
 
+
+
+------------------------------------
+**************nmtui*****************
+------------------------------------
+
+nmtui-->edit-a-connection
 ------------------------------------
 TO BE ADDED IN THE FUTURE*****************
 ------------------------------------

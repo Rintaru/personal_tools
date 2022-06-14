@@ -29,6 +29,7 @@ git rebase base topic												apply new commits from base on to topic
 git checkout base && git merge topic										merge topic in to base
 
 git push -force origin <branch>											git push without having to pull first
+
 ------------------------------------
 *****REMOTES*****************
 -----------------------------------
@@ -66,3 +67,4 @@ cat .ssh/<key_name>.pub && (copy contents of <keyname>.pub)							copy public ke
 setting->SSH and GPG keys->New SSH key->(paste from clipboard)							paste public key on github.
 
 (click `Add SSH key`)												add ssh key to github
+

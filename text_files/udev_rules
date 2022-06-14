@@ -8,7 +8,7 @@ udevsymlink						Create symlink to device alias.
 udevadm monitor						Monitor devices that are plugged/unplugged.
 udevadm info -a /dev/<device_name>			Get info for writing udev rules. <device_name> comes from `udevadm monitor`
 touch /etc/udev/rules.d/<prioroty>-<name>.rules		Create udev rule from `udevadm info`
-sudo systemctl restart udev.service			Reload udev rules
+sudo udevadm control --reload-rules			Reload udev rules
 ------------------------------------
 *********UDEV RULE TEMPLATE*********
 ------------------------------------
