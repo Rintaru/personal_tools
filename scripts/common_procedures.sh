@@ -1,8 +1,8 @@
 #!/bin/bash
 #TODO: integrate this tool with fuzzy finders
-PTH_TXT_FLS=$HOME/__common_procedures/text_files
-PTH_SCRIPTS=$HOME/__common_procedures/scripts
-PTH_OPTIONS=$HOME/__common_procedures/options
+PTH_TXT_FLS=$HOME/.common_procedures/text_files
+PTH_SCRIPTS=$HOME/.common_procedures/scripts
+PTH_OPTIONS=$HOME/.common_procedures/options
 #print intro text when opening terminal
 echo " "
 cat $PTH_TXT_FLS/intro
