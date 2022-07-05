@@ -8,6 +8,10 @@ sudo route del -net <ip address> gw <gateway address>							delete ip address fr
 sudo wireshark												determine ip addresses of devices on a network if they are "broadcasting"
 
 netcat -l <destination> <port>										listen for TCP messages heading to <destination> via <port>
+
+ip a													replacement to ifconfig
+
+ssh-copy-id <hostname>@<IP address>									save login
 ------------------------------------
 **************nmcli*****************
 ------------------------------------
