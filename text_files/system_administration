@@ -34,3 +34,5 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
 
 sudo update-alternatives --config python3	Switch between python 3.6 and 3.9
 
+
+pdftoppm <file>.pdf <outputfile> -jpeg		Convert pdf <file> to jpeg with name <outputfile>

@@ -6,6 +6,8 @@ cd ~/<ws> && catkin list										list packages in a workspace
 
 catkin config --no-blacklist										clear blacklist
 catkin config --blacklist <pkg>										blacklist pkg
+
+export ROS_MASTER_URI=http://<IP ADDRESS>:11311/							Add remote rosmaster
 ------------------------------------
 ******ADDING CUSTOM MESSAGES********
 ------------------------------------
