@@ -7,7 +7,7 @@ mk_catkin_ws(){
       if [ -e "$1" ]; then
           echo "$1 exists, use a different dir name."
       else
-          mkdir -v -p $1
+          mkdir -v -p $1/src
       fi
   fi 
 
