@@ -3,7 +3,7 @@ common_procedures	list common procedures(can tab complete) (TODO: Integrate scri
 edbash			edit ~/.bashrc 
 edcomm			edit common_procedures.sh 
 edalias			edit aliases
-
+mk_catkin_ws		create catkin workspace
 SUPER+L			LOCK SCREEN
 MAKE SURE TO SET JOHN REPELANT!!!
 
