@@ -16,6 +16,7 @@ sudo du -hs <path> | sort -h			list file sizes and sort by size
 
 sudo nano /etc/modprobe.d/blacklist.conf	edit blacklisted kernel modules
 
+gsettings					GSettings configuration tool
 --------------------------------------------------------------
 *****INSTALL PYTHON3.9 ALONGSIDE PYTHON3.6********************
 --------------------------------------------------------------
