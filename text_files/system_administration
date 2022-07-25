@@ -12,8 +12,6 @@ sudo passwd <user>				change password
 kill -9 <PID>					kill process with a PID
 pgrep rosmaster					grab PID of rosmaster
 
-sudo du -hs <path> | sort -h			list file sizes and sort by size 
-
 sudo nano /etc/modprobe.d/blacklist.conf	edit blacklisted kernel modules
 
 gsettings					GSettings configuration tool
@@ -37,3 +35,11 @@ sudo update-alternatives --config python3	Switch between python 3.6 and 3.9
 
 
 pdftoppm <file>.pdf <outputfile> -jpeg		Convert pdf <file> to jpeg with name <outputfile>
+
+--------------------------------------------------------------
+*****HARD DRIVE OPERATIONS************************************
+--------------------------------------------------------------
+
+sudo du -hs <path> | sort -h							list file sizes and sort by size
+dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge		Purge Uninstalled packages
+dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n			List installed packages by file sizes(purge uninstalled packages first)
