@@ -1,20 +1,20 @@
-hostnamectl					show hostname, and other cpu info
-sudo adduser <user_name>			create new user
-sudo -i						change to root user
+hostnamectl									show hostname, and other cpu info
+sudo adduser <user_name>							create new user
+sudo -i										change to root user
 
-sudo addgroup <group_name>                      create new group
-groups <user>                                   determine groups that <user> is a part of
-groups						list group
-sudo usermod -a -G <group_name> <user_name>     add user to group
-chown -R <user>:<group> <folder_1> <folder_2>	recursively change folder's user and group
-sudo passwd <user>				change password
+sudo addgroup <group_name>							create new group
+groups <user>									determine groups that <user> is a part of
+groups										list group
+sudo usermod -a -G <group_name> <user_name>					add user to group
+chown -R <user>:<group> <folder_1> <folder_2>					recursively change folder's user and group
+sudo passwd <user>								change password
 
-kill -9 <PID>					kill process with a PID
-pgrep rosmaster					grab PID of rosmaster
+kill -9 <PID>									kill process with a PID
+pgrep rosmaster									grab PID of rosmaster
 
-sudo nano /etc/modprobe.d/blacklist.conf	edit blacklisted kernel modules
+sudo nano /etc/modprobe.d/blacklist.conf					edit blacklisted kernel modules
 
-gsettings					GSettings configuration tool
+gsettings									GSettings configuration tool
 --------------------------------------------------------------
 *****INSTALL PYTHON3.9 ALONGSIDE PYTHON3.6********************
 --------------------------------------------------------------
@@ -28,18 +28,19 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
 
 
 --------------------------------------------------------------
-*****INSTALL PYTHON3.9 ALONGSIDE PYTHON3.6********************
+*****SWITCHING PYTHON3.9 BETWEEN 3.6**************************
 --------------------------------------------------------------
 
-sudo update-alternatives --config python3	Switch between python 3.6 and 3.9
+sudo update-alternatives --config python3					Switch between python 3.6 and 3.9
 
 
-pdftoppm <file>.pdf <outputfile> -jpeg		Convert pdf <file> to jpeg with name <outputfile>
+pdftoppm <file>.pdf <outputfile> -jpeg						Convert pdf <file> to jpeg with name <outputfile>
 
 --------------------------------------------------------------
 *****HARD DRIVE OPERATIONS************************************
 --------------------------------------------------------------
 
+df -h										list available hard drive space
 sudo du -hs <path> | sort -h							list file sizes and sort by size
 dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge		Purge Uninstalled packages
 dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n			List installed packages by file sizes(purge uninstalled packages first)
