@@ -2,7 +2,9 @@
 *****COMPILE_PROGRAMS***************
 ------------------------------------
 cc <executable_source>.cpp -o <executable_name>				compile <executable_source> into <executable_name> 
-------------------------------------
-*****THROW_ERRORS*******************
-------------------------------------
+
+
+
 std::cerr<<"error message"<<std::endl					Stream std error
+
+variable = (condition) ? expressionTrue : expressionFalse;		ternary operator
