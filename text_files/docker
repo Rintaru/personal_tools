@@ -1,0 +1,4 @@
+docker ps -a								list all docker images
+docker run -it <image_name>						run docker <image_name> with interactive shell
+docker exec -it <image_name> bash					start another shell in <image_name>
+cd <path to Dockerfile> && docker build -t <image_name> .		build image and assign it an image name

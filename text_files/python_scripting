@@ -1,4 +1,13 @@
 ------------------------------------
+*****DICTIONARY*********************
+------------------------------------
+dictionary = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+------------------------------------
 *****LIST***************************
 ------------------------------------ 
 mylist = ["e1", "e2", "e3"]
@@ -7,7 +16,7 @@ list1 = ["abc", 34, True, 40, "male"]
 ------------------------------------
 *****TOUPLES************************
 ------------------------------------
-
+tuple = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
 ------------------------------------
 *****DICTIONARIES*******************
 ------------------------------------
@@ -54,3 +63,12 @@ They are utility-type methods that take some parameters and work upon those
 ------------------------------------
 They have the access to the state of the class as it takes a class parameter that points to the class and not the object instance.
 It can modify a class state that would apply across all the instances of the class. 
+
+------------------------------------
+*****TERNARY************************
+------------------------------------
+value_if_true if condition else value_if_false				Standard ternary
+
+(if_test_false, if_test_true)[test]					Touple ternary
+
+variable or fallback							returns fallback if variable is false

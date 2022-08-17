@@ -20,6 +20,10 @@ def add_two_ints_client(x, y):
         print("Service call failed: %s" % e)
 
 
+def callback(data):
+    rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+
+
 if __name__ == "__main__":
     rospy.init_node(
         "name",
@@ -46,7 +50,7 @@ if __name__ == "__main__":
     rospy.Subscriber(
         "name",
         String,
-        cb,
+        callback,
         callback_args=None,
         queue_size=None,
         buff_size=65536,

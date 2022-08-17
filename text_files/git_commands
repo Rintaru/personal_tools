@@ -31,8 +31,8 @@ git checkout base && git merge topic										merge topic in to base
 git push -force origin <branch>											git push without having to pull first
 
 ------------------------------------
-*****REMOTES*****************
------------------------------------
+*****REMOTES************************
+------------------------------------
 <repo_URL>/<file>/#L<line_number>										get url that points to specific line of a file
 
 git remote -v													show remote url
@@ -46,9 +46,9 @@ git config --global user <email/name>										edit email/name
 git log --graph                                                                                                 show git log as a tree
 
 
-------------------------------------
-*****SUBMODULES*********************
-------------------------------------
+------------------------------------------------
+*****SUBMODULES*********************************
+------------------------------------------------
 
 git submodule add -b <branch> <repo_url> <optional_path>							add a submudule to git repo
 
@@ -57,14 +57,21 @@ git clone <repo_url> && cd <repo> && git submodule update --init --recursive				
 ( find . -type d -name ".git" && find . -name ".gitignore" && find . -name ".gitmodules" ) | xargs rm -rf       recursively remove .git folders from directories and sub directories
 
 
-------------------------------------
-*****ADDING SSH-KEYS****************
-------------------------------------
+------------------------------------------------
+*****ADDING SSH-KEYS****************************
+------------------------------------------------
 ssh-keygen -t ed25519 -C "shintaruruiz@gmail.com"								create key linked to email used in github account
 
 cat .ssh/<key_name>.pub && (copy contents of <keyname>.pub)							copy public key to clipboard
 
-setting->SSH and GPG keys->New SSH key->(paste from clipboard)							paste public key on github.
+settings->SSH and GPG keys->New SSH key->(paste from clipboard)							paste public key on github.
 
 (click `Add SSH key`)												add ssh key to github
 
+Signing Failed: Agent Refused Operation
+
+------------------------------------------------
+*****Signing Failed: Agent Refused Operation****
+------------------------------------------------
+ssh-add														The “agent refused operation” error is usually caused by 
+														too open permissions on a private key file.

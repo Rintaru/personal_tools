@@ -8,3 +8,12 @@ cc <executable_source>.cpp -o <executable_name>				compile <executable_source> i
 std::cerr<<"error message"<<std::endl					Stream std error
 
 variable = (condition) ? expressionTrue : expressionFalse;		ternary operator
+------------------------------------
+*****GDB****************************
+------------------------------------
+http://www.unknownroad.com/rtfm/gdbtut/gdbtoc.html			Detailed tutorial on GDB
+backtrace								see trace of frames that were running
+frame n									change to specific frame
+info frame								see info on current frame
+break <filename>.cpp::<line number>					add break point in line number of filename
+break TestClass::testFunc(int)						add break point on specific version of testFunc from TestClass
