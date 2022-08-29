@@ -68,3 +68,13 @@ Debug												No optimization, asserts enabled, [custom debug (output) code e
 RelWithDebInfo											optimized, *with* debug info, but no debug (output) code or asserts.
 
 MinSizeRel											same as Release but optimizing for size rather than speed.
+------------------------------------
+******YAML FORMAT*******************
+------------------------------------
+
+string: 'foo'
+integer: 1234
+float: 1234.5
+boolean: true
+list: [1.0, mixed list]
+dictionary: {a: b, c: d}
