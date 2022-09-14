@@ -61,7 +61,7 @@ They are utility-type methods that take some parameters and work upon those
 ------------------------------------
 *****@classmethod******************   
 ------------------------------------
-They have the access to the state of the class as it takes a class parameter that points to the class and not the object instance.
+They have access to the state of the class as it takes a class parameter that points to the class and not the object instance.
 It can modify a class state that would apply across all the instances of the class. 
 
 ------------------------------------
@@ -72,3 +72,14 @@ value_if_true if condition else value_if_false				Standard ternary
 (if_test_false, if_test_true)[test]					Touple ternary
 
 variable or fallback							returns fallback if variable is false
+
+------------------------------------
+*****LIST-COMPREHENSION*************
+------------------------------------
+newlist = [expression for iterator in iterable]				Unconditional list comprehension
+newlist = [expression for iterator in iterable if condition == True]	Consitional list comprehension
+newdict = {key: value for iterator in eterable}				Dictionary comprehension
+------------------------------------
+*****IMPORTING**********************
+------------------------------------
+from Directory.Filename import class

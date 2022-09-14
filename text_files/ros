@@ -50,6 +50,7 @@ endif()
 rosbag record -d=5m <topic1> <topic2> <topic3>							Record topics into a bag file for a 5 minutes
 rosbag record -d=5m --node=<node>								Record all topics subscribed to by a specific node 
 rosbag record -O <file name>									Record to bagfile with name
+rosbag play --clock -l <path to bag file>							Play baag file in a loop while publishing to clock topic
 ------------------------------------
 ******GDB***************************
 ------------------------------------

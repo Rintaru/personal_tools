@@ -1,5 +1,8 @@
 ctrl+shift+p		type commands
 crtl+k s		save without formatting
+ctrl+k ctrl+0		collapse all
+ctrl+k ctrl+j		uncollapse all
+ctrl+k ctrl+o		open folder
 ------------------------------------
 ***********GIT COMANDS**************
 ------------------------------------
