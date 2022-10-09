@@ -18,6 +18,9 @@ gsettings									GSettings configuration tool
 
 sudo find <path> -type f -name "<file_name>"                                    Find <file_name> in <path>
 
+powerstat -z -a									Record all power consumption statistics
+
+sudo powerstat -z -r								record power consumption statistics reported by Running Average Power Limiter
 --------------------------------------------------------------
 *****INSTALL PYTHON3.9 ALONGSIDE PYTHON3.6********************
 --------------------------------------------------------------
