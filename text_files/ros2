@@ -1,0 +1,6 @@
+colcon build --symlink-install							Build Workspace. --symlink-install is needed so that files in install dir are updated by files in src dir
+colcon test									Run unit test
+source <ws_dir>/install/setup.bash						Source Workspace
+ros2 pkg create --build-type ament_cmake --node-name my_node my_package		create package with a node inside
+colcon build --packages-select my_package					Build only one package
+ros2 run package_name node							run node
