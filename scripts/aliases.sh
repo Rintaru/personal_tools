@@ -4,6 +4,8 @@ alias edalias='nano /home/sekiro/.common_procedures/scripts/aliases.sh'
 alias john-repelant='gsettings set org.gnome.desktop.session idle-delay'
 
 alias diff_ws='code /home/sekiro/differentiate_teleop_ws/ && code /home/sekiro/differentiate_teleop_ws/src/pellion_robot_ws/ && cd /home/sekiro/differentiate_teleop_ws'
+alias cd_ground_truth='cd /home/sekiro/ekf_evaluation_ws/src'
+alias ground_truth_ws='code /home/sekiro/ekf_evaluation_ws/src && code /home/sekiro/ekf_evaluation_ws/src/tagslam_root'
 alias cd_assimov='cd /home/sekiro/differentiate_teleop_ws/src/pelion_robot_ws/src/assimov_gps/'
 alias hmi_ws='cd /home/sekiro/hmi_ws/human_machine_interface && code /home/sekiro/hmi_ws/human_machine_interface/ && code /home/sekiro/hmi_ws/'
 

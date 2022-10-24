@@ -35,5 +35,12 @@ sudo nmcli d wifi connect <SSID> password <PASSWORD>							connect to a wifi
 
 nmtui-->edit-a-connection
 ------------------------------------
+********Simulate Poor Network*******
+------------------------------------
+
+tc qdisc add dev <device> root netem delay 100ms loss 65.1%						Add 100ms delay and 65.1% PL to all traffic on device
+
+
+------------------------------------
 TO BE ADDED IN THE FUTURE*****************
 ------------------------------------

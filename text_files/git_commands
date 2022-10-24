@@ -41,10 +41,13 @@ git remote <remove/add> <origin_name>										remove/add remote repo
 
 git pull <remote> <branch> --allow-unrelated-histories								use after adding existing local to existing repo
 
-git config --global user <email/name>										edit email/name
-
 git log --graph                                                                                                 show git log as a tree
 
+------------------------------------------------
+*****CONFIG*************************************
+------------------------------------------------
+git config --global user.<email/name>                                                                           edit email/name
+git config --list                                                                                               get all configs and their listed values
 
 ------------------------------------------------
 *****SUBMODULES*********************************

@@ -1,0 +1,12 @@
+![](<path>/image_name.jpg)		Attach image located in directory. File path is relative to .md file
+
+------------------------------------
+******INDENTED LIST*****************
+------------------------------------
+* Fruit
+  * Apple
+  * Orange
+  * Banana
+* Dairy
+  * Milk
+  * Cheese
