@@ -9,6 +9,8 @@ udevadm monitor						Monitor devices that are plugged/unplugged.
 udevadm info -a /dev/<device_name>			Get info for writing udev rules. <device_name> comes from `udevadm monitor`
 touch /etc/udev/rules.d/<prioroty>-<name>.rules		Create udev rule from `udevadm info`
 sudo udevadm control --reload-rules			Reload udev rules
+
+https://chmod-calculator.com/				Calculator for MODE values
 ------------------------------------
 *********UDEV RULE TEMPLATE*********
 ------------------------------------
