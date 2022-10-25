@@ -83,3 +83,8 @@ newdict = {key: value for iterator in eterable}				Dictionary comprehension
 *****IMPORTING**********************
 ------------------------------------
 from Directory.Filename import class
+
+------------------------------------
+*****FUNCTOOLS**********************
+------------------------------------
+add_part = partial(add, c = 2, b = 1)					create a function with partially filled arguments for c & b
