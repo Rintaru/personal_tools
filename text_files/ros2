@@ -1,12 +1,14 @@
 source <ws_dir>/install/setup.bash									Source Workspace
 ros2 pkg create --build-type ament_cmake --node-name my_node my_package					create package with a node inside
 ros2 run package_name node										Run node
+ros2 interface												substitute for ros1's `rosmsg` command
 
+rqt													no more  "rosrun rqt etc.."
 ------------------------------------
 **********COLCON********************
 ------------------------------------
 colcon build --packages-select my_package								Build only one package
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo	Build package in debug mode
+colcon build --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo						Build package in debug mode
 colcon test												Run unit test
 colcon build --symlink-install										Build Workspace. --symlink-install is needed so that files in install dir are updated by files in src dir
 
@@ -16,3 +18,5 @@ colcon build --symlink-install										Build Workspace. --symlink-install is ne
 https://navigation.ros.org/tutorials/docs/get_profile.html						Tutorial on how to run valgrind profiler for a node
 http://yosefk.com/blog/how-profilers-lie-the-cases-of-gprof-and-kcachegrind.html			Interpreting Valgrind's output
 https://design.ros2.org/articles/roslaunch_xml.html#schema-definition					Launch File XML specification
+https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html				Ament-Cmake Tutorial
+https://cmake.org/cmake/help/latest/guide/tutorial/index.html						Cmake Tutorial
