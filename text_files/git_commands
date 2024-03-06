@@ -73,7 +73,7 @@ settings->SSH and GPG keys->New SSH key->(paste from clipboard)							paste publ
 
 (click `Add SSH key`)												add ssh key to github
 
-Signing Failed: Agent Refused Operation
+ssh -vT git@github.com												Diagnose Pubkey permission issues
 
 ------------------------------------------------
 *****Signing Failed: Agent Refused Operation****

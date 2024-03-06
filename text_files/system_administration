@@ -21,6 +21,10 @@ sudo find <path> -type f -name "<file_name>"                                    
 powerstat -z -a									Record all power consumption statistics
 
 sudo powerstat -z -r								record power consumption statistics reported by Running Average Power Limiter
+
+grep -B 15 -A 10								print 15 lines preceding match and 10 lines that follow match
+
+dmesg										print or control the kernel ring buffer
 --------------------------------------------------------------
 *****INSTALL PYTHON3.9 ALONGSIDE PYTHON3.6********************
 --------------------------------------------------------------

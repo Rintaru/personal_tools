@@ -1,0 +1,3 @@
+manim -pql script_name.py class_name				Run Manim python script
+
+manim -qm -p --renderer=opengl script_name.py class_name	Run Manim interactively
